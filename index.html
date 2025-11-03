@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daraja 2.0 API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Daraja Integration</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Daraja</a></li>
+                <li><a href="#">APIs</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Learn M-Pesa Daraja Integration</h2>
+            <p>Use this simple form to simulate M-Pesa STK push requests using the Safaricom Daraja API.</p>
+        </section>
+
+        <section class="stk-form">
+            <h3>Send STK Push Request</h3>
+            <form method="POST" action="stkpush.php">
+                <label for="phone">Phone Number (254...):</label><br>
+                <input type="text" id="phone" name="phone" placeholder="2547XXXXXXXX" required><br><br>
+
+                <label for="amount">Amount (KES):</label><br>
+                <input type="number" id="amount" name="amount" placeholder="10" required><br><br>
+
+                <button type="submit">Send Payment Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Daraja API Learning | Made by Hezron Limo</p>
+    </footer>
 </body>
 </html>
